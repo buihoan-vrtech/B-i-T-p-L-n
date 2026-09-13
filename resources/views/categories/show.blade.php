@@ -511,7 +511,7 @@
 
                                 {{ \Illuminate\Support\Str::limit(
                                     $product->description
-                                    ?? 'Sản phẩm công nghệ chất lượng tại Phương Nam Shop.',
+                                    ?? 'Sản phẩm công nghệ chất lượng tại Tây Bắc Shop.',
                                     80
                                 ) }}
 

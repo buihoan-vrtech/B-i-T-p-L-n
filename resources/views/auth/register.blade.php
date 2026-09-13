@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký | Phương Nam Shop</title>
+    <title>Đăng ký | Tây Bắc Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -31,7 +31,7 @@
     <div class="card auth-card p-4">
         <div class="text-center mb-4">
             <h2 class="fw-bold mb-1">Đăng ký</h2>
-            <p class="text-muted mb-0">Tạo tài khoản để mua sắm tại Phương Nam Shop</p>
+            <p class="text-muted mb-0">Tạo tài khoản để mua sản phẩm tại Tây Bắc Shop</p>
         </div>
 
         @if ($errors->any())

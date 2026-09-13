@@ -113,18 +113,18 @@ class AuthController extends Controller
 
             Mail::raw(
                 "Xin chào {$user->name}!\n\n"
-                . "Cảm ơn bạn đã đăng ký tài khoản tại Phương Nam Shop.\n\n"
+                . "Cảm ơn bạn đã đăng ký tài khoản tại Tây Bắc Shop.\n\n"
                 . "Mã xác thực email của bạn là:\n\n"
                 . "{$verificationCode}\n\n"
                 . "Mã này có hiệu lực trong 10 phút.\n\n"
                 . "Nếu bạn không thực hiện đăng ký, vui lòng bỏ qua email này.\n\n"
-                . "Phương Nam Shop",
+                . "Tây Bắc Shop",
                 function ($message) use ($user) {
 
                     $message
                         ->to($user->email)
                         ->subject(
-                            'Mã xác thực - Phương Nam Shop'
+                            'Mã xác thực - Tây Bắc Shop'
                         );
                 }
             );
@@ -307,7 +307,7 @@ public function verifyEmailCode(Request $request)
         ->route('welcome')
         ->with(
             'success',
-            'Xác thực email thành công! Chào mừng bạn đến với Phương Nam Shop.'
+            'Xác thực email thành công! Chào mừng bạn đến với Tây Bắc Shop.'
         );
 }
 
@@ -417,7 +417,7 @@ public function verifyEmailCode(Request $request)
             ->route('welcome')
             ->with(
                 'success',
-                'Xác thực email thành công! Chào mừng bạn đến với Phương Nam Shop.'
+                'Xác thực email thành công! Chào mừng bạn đến với Tây Bắc Shop.'
             );
     }
 
@@ -477,16 +477,16 @@ public function verifyEmailCode(Request $request)
             // Gửi email
             Mail::raw(
                 "Xin chào {$user->name}!\n\n"
-                . "Mã xác thực mới của bạn tại Phương Nam Shop là:\n\n"
+                . "Mã xác thực mới của bạn tại Tây Bắc Shop là:\n\n"
                 . "{$verificationCode}\n\n"
                 . "Mã này có hiệu lực trong 10 phút.\n\n"
-                . "Phương Nam Shop",
+                . "Tây Bắc Shop",
                 function ($message) use ($user) {
 
                     $message
                         ->to($user->email)
                         ->subject(
-                            'Mã xác thực mới - Phương Nam Shop'
+                            'Mã xác thực mới - Tây Bắc Shop'
                         );
                 }
             );

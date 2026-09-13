@@ -165,7 +165,7 @@
                         letter-spacing:1px;
                     "
                 >
-                    ⚡ PHƯƠNG NAM SHOP
+                    ⚡ TÂY BẮC SHOP
                 </div>
 
 
@@ -687,7 +687,7 @@
                                 Khám phá các sản phẩm
                                 thuộc danh mục
                                 {{ $category->name }}
-                                tại Phương Nam Shop.
+                                tại Tây Bắc Shop.
 
                             </p>
 
